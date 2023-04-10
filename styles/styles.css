@@ -434,6 +434,7 @@ img {
     padding-bottom: 96px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 
     background-color: var(--dark);
 }
@@ -465,6 +466,8 @@ img {
 }
 
 .footer-social {
+    display: block;
+    text-align: center;
     /* margin-left: 120px; */
 }
 
@@ -603,22 +606,23 @@ img {
     align-items: center; */
 
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
+
 }
 
 .face-text {
+
     font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
-    text-align: center;
+    font-size: 36px;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     cursor: pointer;
     color: var(--white_background);
 
-
+    padding-left: 39px;
+    padding-right: 39px;
     margin-bottom: 48px;
-    width: 496px;
+    width: auto;
 
 }
 
@@ -647,15 +651,19 @@ img {
 }
 
 .targets {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 
 }
 
-.targets-item {}
+.targets-item:not(:last-child){
+    margin-bottom: 72px;
+}
 
 .targets-pictures {
-    display: flex;
+
+    display: none;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
 
@@ -667,22 +675,22 @@ img {
     border-radius: 4px;
 }
 
-.targets-svg {
-    display: none;
-}
+.targets-svg {}
 
 .targets-list {
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
-    gap: 24px;
+    gap: 24px; */
+    display: block;
+    text-align: center;
 }
 
 
 
 .targets-main {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     color: var(--dark);
 
@@ -691,6 +699,9 @@ img {
 }
 
 .targets-text {
+    text-align: left;
+
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -700,6 +711,7 @@ img {
 }
 
 .activity {
+    display: none;
     padding-top: 0;
     padding-bottom: 120px;
 }
@@ -746,7 +758,9 @@ img {
 
 .team-list {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    width: 264px;
 
 }
 
@@ -816,6 +830,7 @@ img {
 }
 
 .customers {
+    display: block;
     padding-top: 120px;
     padding-bottom: 120px;
 }
@@ -833,9 +848,10 @@ img {
 
 .customers-list {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
-    /* gap: 24px; */
+    flex-wrap: wrap;
+    gap: 16px;
 }
 
 
