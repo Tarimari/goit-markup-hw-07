@@ -44,7 +44,7 @@ img {
 }
 
 .container {
-    min-width: 100%;
+    width: 100%;
     padding: 0 15px;
     margin: auto;
 
@@ -52,23 +52,6 @@ img {
     /* outline: 1px solid orange; */
 }
 
-@media screen and (min-width: 428px) {
-    .container {
-    max-width: 428px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .container {
-    max-width: 768px;
-    }
-}
-
-@media screen and (min-width: 1158px) {
-    .container {
-    max-width: 1158px;
-    }
-}
 
 .visually_hidden {
     position: absolute;
@@ -549,6 +532,7 @@ img {
     border: 1px solid var(--white_background);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+    opacity: 0.3;
 }
 
 .connect-email::placeholder {
@@ -1092,8 +1076,9 @@ img {
     justify-content: left;
     align-content: center;
     flex-wrap: wrap;
-
     gap: 24px;
+
+    width: 582px;
 
 
 }
@@ -1108,14 +1093,91 @@ img {
 
 .footer-social {
     flex-basis: calc((100% - 24px) / 2);
+    margin-top: 0;
 }
 
 .footer-connect {
-    flex-basis: calc((100% - 24px) / 2);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-basis: 100%;
+}
+
+.social-text-email {
+    width: 50%;
+}
+
+.social-text {
+    text-align: left;
+}
+
+.face {
+    height: auto;
+    padding-top: 112px;
+    padding-bottom: 108px;
 }
 
 
+.face-text {
+    font-size: 56px;
+    line-height: 1.07;
 
+    padding-left: 121px;
+    padding-right: 121px;
+    margin-bottom: 40px;
+
+}
+
+.targets-list {
+    display: flex;
+    justify-content: left;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+
+
+}
+
+.targets-item {
+    flex-basis: calc((100% - 24px) / 2);
+}
+
+.targets-item:not(:last-child){
+    margin-bottom: 0px;
+}
+
+.targets-main {
+    text-align: left;
+}
+
+.targets-text {
+    text-align: left;
+}
+
+.team {
+    padding-top: 96px;
+    padding-bottom: 96px;
+
+}
+
+.team-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+
+}
+
+.customers-list {
+    gap: 24px;
+    row-gap: 72px; 
+}
+
+.customers-link {
+    width: 168px;
+}
 
 
 }
