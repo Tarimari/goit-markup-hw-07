@@ -16,7 +16,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container header-container">
         <nav class="header-navigat">
           <a class="logo link" href="./index.html"
             >Web<span class="header-logo">Studio</span></a
@@ -31,22 +31,19 @@
         </nav>
         <address class="header-address">
           <ul class="header-adress-list list">
-            <li>
+            <li class="header-address-link" >
               <a class="header-contacts link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
+            <li class="header-address-link" >
               <a class="header-contacts link" href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
             </li>
           </ul>
         </address>
-        <button type="button" class="mob-open-btn" data-menu-open>
-          <svg>
-            <use href="./images/hamburger.svg"></use></svg>
-          </button>
+        <button type="button" class="mob-open-btn" data-menu-open></button>
 
         <div  class="mob-menu backdrop is-hidden" data-menu>
           <button type="button" class="backdrop-close-btn" data-menu-close>
@@ -69,7 +66,7 @@
                 <a class="mob-item link" href="tel:+110001111111"
                   >+11 (000) 111-11-11</a
                 >
-              </li class="mob-navigate-item">
+              </li>
               <li>
                 <a class="mob-contacts link" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
@@ -197,8 +194,8 @@
           <ul class="team-list list">
             <li class="team-item">
               <img
-                srcset="./images/team_card_1.jpg 1x, ./images/team_card_1_2x.jpg 2x"
-                src="./images/team_card_1.jpg"
+                srcset="../images/team_card_1.jpg 1x, ../images/team_card_1_2x.jpg 2x"
+                src="../images/team_card_1.jpg"
                 alt="Mark"
                 width="264"
                 height="260"
@@ -267,8 +264,8 @@
             </li>
             <li class="team-item">
               <img
-                srcset="./images/team_card_3.jpg 1x, ./images/team_card_3_2x.jpg 2x"
-                src="./images/team_card_3.jpg"
+                srcset="/images/team_card_3.jpg 1x, /images/team_card_3_2x.jpg 2x"
+                src="/images/team_card_3.jpg"
                 alt="Camila"
                 width="264"
                 height="260"
@@ -439,34 +436,28 @@
         <form class="modal-form">
   
             <label class="modal-label">Name
-              <div class="modal-label-input">
                 <input class="modal-field" type="text" name="name" autofocus >
                 <span class="label-icon">
                   <svg class="label-icon-svg">
                     <use class="label-icon-use" href="./images/sprite-icon.svg#icon-person"></use>
                   </svg>
               </span>
-              </div>
             </label>
             <label class="modal-label">Phone
-              <div class="modal-label-input">
                 <input class="modal-field" type="tel" name="tel">
                 <span class="label-icon">
                   <svg class="label-icon-svg kostul">
                     <use class="label-icon-use" width="13px" height="13px" href="./images/sprite-icon.svg#icon-phone"></use>
                   </svg>
                 </span>
-              </div>
             </label>
             <label class="modal-label">Email
-              <div class="modal-label-input">
                 <input class="modal-field" type="email" name="email">
                 <span class="label-icon">
                   <svg class="label-icon-svg kostul">
                     <use class="label-icon-use" width="15px" height="12px" href="./images/sprite-icon.svg#icon-mail"></use>
                   </svg>
                 </span>
-              </div>
             </label>
             <label class="modal-label">Comment
               <textarea class="modal-textarea" name="coment" placeholder="Text input" ></textarea>
