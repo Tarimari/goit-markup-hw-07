@@ -180,7 +180,7 @@ img {
 
 
 .modal-field {
-    
+
     display: block;
     width: 100%;
     height: 40px;
@@ -492,12 +492,16 @@ img {
 }
 
 .footer-conteiner {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
 }
 
-.footer_logo-text {}
+.footer_logo-text {
+    width: 268px;
+}
 
 .footer-logo {
     color: var(--light);
@@ -511,15 +515,12 @@ img {
     letter-spacing: 0.02em;
     color: var(--accent);
 
-    padding-left: 65px;
-    padding-right: 65px;
     margin-top: 16px;
 
 }
 
 .footer-social {
     display: block;
-    text-align: center;
     margin-top: 72px;
 }
 
@@ -566,9 +567,16 @@ img {
 }
 
 .footer-connect {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+    width: 100%;
     margin-top: 72px;
+}
+
+.social-text-email {
+    width: 100%;
 }
 
 .connect-email {
@@ -597,7 +605,6 @@ img {
 
 .connect-btn {
     position: relative;
-    right: 0px;
     top: 40px;
     width: 165px;
     height: 40px;
@@ -1153,6 +1160,7 @@ img {
     .header-address-link {
         margin-bottom: 6px;
     }
+
     .header-address-link:last-child {
         margin-bottom: 0;
     }
