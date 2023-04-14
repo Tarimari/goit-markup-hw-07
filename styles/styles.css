@@ -642,15 +642,15 @@ img {
 /*----------MAIN---------*/
 .face {
     max-width: 1440px;
-    height: 600px;
+    height: auto;
     margin: 0 auto;
     background-color: var(--dark);
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office_mob.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding-top: 188px;
-    padding-bottom: 188px;
+    padding-top: 112px;
+    padding-bottom: 112px;
 }
 
 .face-conteiner {
@@ -806,6 +806,7 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 72px;
 
 }
 
@@ -1216,7 +1217,6 @@ img {
 
     .face {
         height: auto;
-        padding-top: 112px;
         padding-bottom: 108px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/people-office_tab.jpg');
     }
@@ -1280,6 +1280,7 @@ img {
         align-content: center;
         flex-wrap: wrap;
         gap: 24px;
+        row-gap: 64px;
 
     }
 
