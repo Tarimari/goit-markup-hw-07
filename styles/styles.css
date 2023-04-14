@@ -431,8 +431,8 @@ img {
 
 .mob-item {
     font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
+    font-weight: 500;
+    font-size: 26px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     color: var(--dark);
@@ -448,14 +448,15 @@ img {
 }
 
 .mob-address {
+    width: 100%;
     margin-bottom: 48px;
 }
 
 
 .mob-list-icon {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 56px;
 }
 
 .mob-icon-link {
@@ -660,6 +661,9 @@ img {
 }
 
 .face-text {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 
     font-weight: 700;
     font-size: 36px;
@@ -668,8 +672,6 @@ img {
     cursor: pointer;
     color: var(--white_background);
 
-    padding-left: 39px;
-    padding-right: 39px;
     margin-bottom: 48px;
     width: auto;
 
@@ -1105,6 +1107,15 @@ img {
         display: none;
     }
 
+    .mob-item {
+        font-weight: 700;
+        font-size: 36px;
+    }
+
+    .face-text {
+        width: 320px;
+    }
+
 
 
     @media (min-device-pixel-ratio: 2),
@@ -1231,11 +1242,10 @@ img {
 
 
     .face-text {
+        width: 496px;
         font-size: 56px;
         line-height: 1.07;
 
-        padding-left: 121px;
-        padding-right: 121px;
         margin-bottom: 40px;
 
     }
@@ -1329,6 +1339,9 @@ img {
         gap: 40px;
         margin: 0;
     }
+    .header-address-link {
+        margin-bottom: 0;
+    }
 
 
     .header-contacts {
@@ -1367,7 +1380,14 @@ img {
     }
 
     .footer-connect {
+        justify-content: space-between;
         margin-left: 80px;
+    }
+    .social-text-email {
+        width: 100%;
+    }
+    .connect-email {
+        opacity: 1;
     }
 
 
